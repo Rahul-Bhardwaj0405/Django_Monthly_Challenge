@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet"  href="{% static "months/indiviualM.css" %}">
+{% endblock %}
+
+{% block page_title %}
+Indiviual Month 
+{% endblock %}
+
+{% block content %}
+
+{% include "months/includes/header.html" %}
+
+<h1>{{month_name|title}}</h1>
+
+{%if month_value is not None %}
+    {{month_value}}
+{%else%}
+    <p>There is no such month you idiot!!</p>
+{% endif %}
+<footer>
+    <img src="{% static "months/images/calender.png" %}" alt= " calender's image" class="small-image">
+</footer>
+{% endblock %}
+

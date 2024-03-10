@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "months/index.css" %}">
+{% endblock %}
+
+{% block page_title %}
+
+{% endblock %}
+
+{% block content %}
+    {% include "months/includes/header.html" %}
+
+    <ul>
+        {% for mon in months %}
+            <a href="{% url "Indiviual month" mon %}">
+            <li>
+            {{mon|title}}
+            </li>
+            </a>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
+

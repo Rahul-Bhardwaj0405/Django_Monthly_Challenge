@@ -1,0 +1,26 @@
+/* Style for the ul element */
+ul {
+    list-style-type: none;
+    margin: 0 auto; /* Center the ul */
+    padding: 0;
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Style for the li element */
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center; /* Center the text */
+}
+
+/* Style for the a element */
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; /* Bold the text */
+}
+
+/* Style for the a element on hover */
+a:hover {
+    color: #007bff;
+}
